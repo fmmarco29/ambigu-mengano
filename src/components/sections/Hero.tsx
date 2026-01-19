@@ -21,7 +21,7 @@ export default function Hero() {
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="flex flex-col gap-6 max-w-4xl"
                 >
-                    <span className="text-primary text-xs md:text-sm font-bold tracking-[0.4em] uppercase">Desde 1998</span>
+                    <span className="text-primary text-xs md:text-sm font-bold tracking-[0.5em] uppercase">Refugio de Noctámbulos</span>
                     <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter drop-shadow-2xl">
                         Ambigú Mengano
                     </h1>
