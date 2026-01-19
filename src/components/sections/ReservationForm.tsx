@@ -39,10 +39,8 @@ export default function ReservationForm() {
 
             <div className="max-w-2xl mx-auto relative z-10">
                 <div className="text-center mb-10">
-                    <h2 className="text-5xl md:text-6xl font-extrabold text-white uppercase tracking-tighter">
-                        Reserva tu <span className="text-primary">Rincón</span>
-                    </h2>
-                    <p className="text-primary text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase opacity-70 mt-2">No te quedes sin sitio en la barra</p>
+                    <h2 className="text-3xl font-black text-white uppercase mb-2">Reserva tu Rincón</h2>
+                    <p className="text-primary/80 text-sm font-sans tracking-widest uppercase">No te quedes sin sitio en la barra</p>
                 </div>
 
                 <motion.form

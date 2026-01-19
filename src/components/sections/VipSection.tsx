@@ -39,11 +39,12 @@ export default function VipSection() {
                     className="space-y-12"
                 >
                     <div className="space-y-4">
-                        <span className="text-primary text-[10px] md:text-xs font-bold tracking-[0.5em] uppercase opacity-70">Membresía Exclusiva</span>
-                        <h2 className="text-5xl md:text-7xl font-extrabold text-white uppercase tracking-tighter leading-tight">
-                            Club <span className="text-primary">Mengano</span>
+                        <span className="text-primary text-sm font-bold tracking-[0.3em] uppercase">Membresía Exclusiva</span>
+                        <h2 className="text-4xl md:text-6xl font-black text-white uppercase leading-none">
+                            Club <br />
+                            <span className="text-primary italic font-display">Mengano</span>
                         </h2>
-                        <p className="text-white/60 text-lg leading-relaxed max-w-md italic border-l-2 border-primary/30 pl-6">
+                        <p className="text-white/60 text-lg leading-relaxed max-w-md italic">
                             &quot;Para los que siempre vuelven&quot;
                         </p>
                     </div>
@@ -127,7 +128,7 @@ export default function VipSection() {
                             <div className="flex justify-between items-start">
                                 <div className="space-y-1">
                                     <p className="text-primary text-[10px] font-bold tracking-[0.3em] uppercase">Membership Card</p>
-                                    <h3 className="text-white text-xl font-extrabold uppercase tracking-widest">Miembro de Honor</h3>
+                                    <h3 className="text-white text-2xl font-bold font-display italic">Miembro de Honor</h3>
                                 </div>
                                 <span className="material-symbols-outlined text-primary text-4xl opacity-50">workspace_premium</span>
                             </div>

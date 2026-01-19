@@ -32,8 +32,8 @@ export default function AtmosphereGallery() {
         <section ref={targetRef} className="relative h-[300vh] bg-black">
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
                 <div className="absolute top-20 left-6 z-20 space-y-2">
-                    <span className="text-primary text-[10px] md:text-xs font-bold tracking-[0.5em] uppercase opacity-70">Atmósfera</span>
-                    <h2 className="text-white text-5xl md:text-8xl font-extrabold uppercase tracking-tighter">La Mirada <br /><span className="text-primary">Mengano</span></h2>
+                    <span className="text-primary text-sm font-bold tracking-[0.4em] uppercase">Atmósfera</span>
+                    <h2 className="text-white text-4xl md:text-7xl font-black uppercase tracking-tighter">La Mirada Mengano</h2>
                 </div>
 
                 <motion.div style={{ x }} className="flex gap-8 px-6">
@@ -49,8 +49,8 @@ export default function AtmosphereGallery() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
                             <div className="absolute bottom-10 left-10 space-y-2">
-                                <h3 className="text-3xl font-extrabold text-white uppercase tracking-tight">{img.title}</h3>
-                                <p className="text-primary font-medium text-lg italic">{img.desc}</p>
+                                <h3 className="text-3xl font-black text-white uppercase">{img.title}</h3>
+                                <p className="text-primary italic font-display text-lg">{img.desc}</p>
                             </div>
                         </div>
                     ))}

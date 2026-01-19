@@ -5,9 +5,9 @@ export default function Header() {
         <header className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between border-b border-primary/20 bg-background/80 backdrop-blur-md px-6 py-4">
             <div className="flex items-center gap-3">
                 <div className="size-9 text-primary flex items-center justify-center border-2 border-primary rounded-sm shadow-[0_0_10px_rgba(183,134,11,0.2)]">
-                    <span className="text-xl font-extrabold tracking-tighter text-primary">AM</span>
+                    <span className="text-xl font-black tracking-tighter font-display text-primary">AM</span>
                 </div>
-                <h2 className="text-white text-lg font-extrabold leading-tight tracking-[0.1em] uppercase">Ambigú <span className="text-primary">Mengano</span></h2>
+                <h2 className="text-white text-lg font-bold leading-tight tracking-[0.1em] uppercase">Ambigú</h2>
             </div>
 
             <nav className="hidden md:flex items-center gap-8">

@@ -91,7 +91,7 @@ export default function MusicalSection() {
                 <div className="space-y-12">
                     <div className="flex items-center gap-4">
                         <div className="h-px flex-1 bg-primary/20"></div>
-                        <h2 className="text-white text-3xl md:text-5xl font-extrabold text-center uppercase tracking-tighter">La <span className="text-primary">Esencia</span></h2>
+                        <h2 className="text-white text-3xl md:text-4xl font-black font-display italic text-center uppercase tracking-tighter">La Esencia</h2>
                         <div className="h-px flex-1 bg-primary/20"></div>
                     </div>
 
@@ -113,7 +113,7 @@ export default function MusicalSection() {
                                     <span className="material-symbols-outlined !text-5xl">{item.icon}</span>
                                 </div>
                                 <div className="space-y-4 relative z-10">
-                                    <h3 className="text-white text-2xl font-extrabold uppercase tracking-tight">{item.title}</h3>
+                                    <h3 className="text-white text-2xl font-black font-display uppercase tracking-tight">{item.title}</h3>
                                     <p className="text-white/40 text-sm leading-relaxed max-w-md">
                                         {item.desc}
                                     </p>
