@@ -15,14 +15,14 @@
 @utility vintage-border {
   border: 1px solid rgba(197, 160, 89, 0.2);
   position: relative;
-}
 
-@utility vintage-border::before {
-  content: "";
-  position: absolute;
-  inset: 6px;
-  border: 1px solid rgba(197, 160, 89, 0.05);
-  pointer-events: none;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border: 1px solid rgba(197, 160, 89, 0.05);
+    pointer-events: none;
+  }
 }
 
 @keyframes slow-zoom {
