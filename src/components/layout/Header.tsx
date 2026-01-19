@@ -3,11 +3,10 @@
 export default function Header() {
     return (
         <header className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between border-b border-primary/20 bg-background/80 backdrop-blur-md px-6 py-4">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center">
                 <div className="size-10 border-2 border-primary rounded-sm shadow-[0_0_15px_rgba(183,134,11,0.2)] flex items-center justify-center">
-                    <span className="text-lg font-black tracking-tighter font-sans text-primary leading-none mb-[-1px]">AM</span>
+                    <span className="text-xl font-black tracking-tighter font-sans text-white leading-none mb-[-1px]">A</span>
                 </div>
-                <h2 className="text-white text-xl font-bold leading-tight tracking-[0.1em] uppercase">Ambigú <span className="text-primary">Mengano</span></h2>
             </div>
 
             <nav className="hidden md:flex items-center gap-10">
