@@ -21,9 +21,12 @@ export default function GiftSection() {
         <section className="py-24 px-6 bg-[#0f0c08] relative" id="regalos">
             <div className="max-w-4xl mx-auto space-y-16">
                 <div className="text-center space-y-4">
-                    <h2 className="text-primary text-4xl md:text-5xl font-bold uppercase italic tracking-widest">Regala un Bolero</h2>
-                    <div className="w-24 h-px bg-primary mx-auto opacity-50"></div>
-                    <p className="text-white/80 text-lg italic">Regala música, sabor y recuerdos que no se borran.</p>
+                    <h2 className="text-white text-5xl md:text-6xl font-extrabold uppercase tracking-tighter">
+                        Regala un <span className="text-primary">Bolero</span>
+                    </h2>
+                    <p className="text-primary text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase opacity-70">
+                        Música, Sabor y Recuerdos
+                    </p>
                 </div>
 
                 <div className="bg-surface/20 vintage-border paper-texture p-8 md:p-12 relative overflow-hidden">

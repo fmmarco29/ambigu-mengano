@@ -21,16 +21,16 @@ export default function Hero() {
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="flex flex-col gap-6 max-w-4xl"
                 >
-                    <span className="text-primary text-xs md:text-sm font-bold tracking-[0.4em] uppercase">Desde 1998</span>
-                    <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter drop-shadow-2xl">
-                        Ambigú Mengano
+                    <span className="text-primary text-[10px] md:text-xs font-bold tracking-[0.5em] uppercase opacity-70">Desde 1998</span>
+                    <h1 className="text-white text-6xl md:text-8xl lg:text-9xl font-extrabold leading-[0.85] tracking-tight drop-shadow-2xl uppercase">
+                        Ambigú<br /><span className="text-primary">Mengano</span>
                     </h1>
-                    <div className="h-[2px] w-24 bg-primary mx-auto my-2"></div>
+                    <div className="h-[1px] w-24 bg-primary mx-auto my-4 opacity-50"></div>
                     <motion.h2
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5, duration: 1 }}
-                        className="text-primary text-xl md:text-3xl font-medium tracking-wide italic font-display"
+                        className="text-white/80 text-lg md:text-2xl font-light tracking-widest italic"
                     >
                         El arte de perder el tiempo con clase
                     </motion.h2>

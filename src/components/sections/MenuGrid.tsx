@@ -104,12 +104,12 @@ export default function MenuGrid() {
 
                 {/* Main Menu Area */}
                 <div className="flex-1 space-y-12">
-                    <div className="space-y-4 border-b border-primary/20 pb-12">
-                        <h2 className="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter">
-                            La Carta <span className="text-primary italic font-display font-medium">Completa</span>
+                    <div className="space-y-4 border-b border-primary/20 pb-12 text-center md:text-left">
+                        <h2 className="text-5xl md:text-7xl font-extrabold text-white uppercase tracking-tighter">
+                            La Carta de los <span className="text-primary">Menganos</span>
                         </h2>
-                        <p className="text-white/40 text-lg font-serif italic max-w-2xl leading-relaxed">
-                            Una selección curada de destilados, alquimia y sabores con historia. Cada trago es un viaje por la nostalgia y el refinamiento.
+                        <p className="text-primary text-xs md:text-sm font-bold tracking-[0.4em] uppercase opacity-70">
+                            Elegancia Líquida
                         </p>
                     </div>
 
@@ -118,60 +118,33 @@ export default function MenuGrid() {
                             {activeTab === 'cocktails' && (
                                 <motion.div
                                     key="cocktails"
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, y: -20 }}
-                                    className="space-y-4"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6"
                                 >
                                     {menuData.cocktails.map((item, i) => (
-                                        <div key={i} className="border border-white/5 rounded-2xl bg-surface/30 hover:border-primary/30 transition-all overflow-hidden">
-                                            <button
-                                                onClick={() => setExpandedItem(expandedItem === item.name ? null : item.name)}
-                                                className="w-full flex items-center justify-between p-6 list-none text-left"
-                                            >
-                                                <div className="flex flex-col gap-1">
-                                                    <div className="flex items-center gap-3">
-                                                        <h4 className="text-2xl font-bold text-primary font-display">{item.name}</h4>
-                                                        <span className="px-2 py-0.5 rounded text-[8px] bg-primary text-black uppercase tracking-[0.2em] font-black">Firma</span>
+                                        <motion.div
+                                            key={i}
+                                            whileHover={{ y: -10 }}
+                                            className="group relative flex flex-col bg-[#1a160d] border border-primary/20 rounded-2xl overflow-hidden hover:shadow-[0_20px_40px_rgba(184,134,11,0.2)] transition-all"
+                                        >
+                                            <div className="aspect-[4/5] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
+                                                <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                            </div>
+                                            <div className="p-6 space-y-4 flex flex-col justify-between flex-1">
+                                                <div className="space-y-1">
+                                                    <h3 className="text-white text-lg font-bold uppercase tracking-tight leading-tight group-hover:text-primary transition-colors">{item.name}</h3>
+                                                    <p className="text-primary text-[10px] uppercase font-bold tracking-widest">{item.ingredients}</p>
+                                                </div>
+                                                <div className="flex items-center justify-between pt-4 border-t border-primary/10">
+                                                    <span className="text-primary font-black text-xl">{item.price}</span>
+                                                    <div className="size-8 flex items-center justify-center rounded-full border border-primary/30 group-hover:bg-primary group-hover:text-black transition-all">
+                                                        <span className="material-symbols-outlined text-sm">add</span>
                                                     </div>
-                                                    <p className="text-white/40 text-sm font-sans italic">{item.ingredients}</p>
                                                 </div>
-                                                <div className="flex items-center gap-6">
-                                                    <span className="text-xl font-bold text-white">{item.price}</span>
-                                                    <span className={`material-symbols-outlined text-primary transition-transform duration-300 ${expandedItem === item.name ? 'rotate-180' : ''}`}>expand_more</span>
-                                                </div>
-                                            </button>
-
-                                            <AnimatePresence>
-                                                {expandedItem === item.name && (
-                                                    <motion.div
-                                                        initial={{ height: 0, opacity: 0 }}
-                                                        animate={{ height: 'auto', opacity: 1 }}
-                                                        exit={{ height: 0, opacity: 0 }}
-                                                        className="overflow-hidden"
-                                                    >
-                                                        <div className="px-6 pb-8 pt-4 border-t border-primary/10 grid md:grid-cols-3 gap-8">
-                                                            <div className="md:col-span-1 rounded-xl overflow-hidden aspect-video md:aspect-square brightness-75">
-                                                                <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
-                                                            </div>
-                                                            <div className="md:col-span-2 space-y-6">
-                                                                <div className="space-y-2">
-                                                                    <p className="text-primary text-[10px] uppercase font-bold tracking-widest">La Historia</p>
-                                                                    <p className="text-white/60 text-base italic font-display leading-relaxed">{item.story}</p>
-                                                                </div>
-                                                                <div className="space-y-2">
-                                                                    <p className="text-primary text-[10px] uppercase font-bold tracking-widest">Perfect Serve</p>
-                                                                    <p className="text-white/40 text-sm font-sans">{item.perfectServe}</p>
-                                                                </div>
-                                                                <button className="bg-primary/10 text-primary border border-primary/20 px-8 py-3 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-black transition-all">
-                                                                    Pedir este trago
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </motion.div>
-                                                )}
-                                            </AnimatePresence>
-                                        </div>
+                                            </div>
+                                        </motion.div>
                                     ))}
                                 </motion.div>
                             )}

@@ -22,11 +22,11 @@ export default function DanceFloor() {
                     stars
                 </motion.span>
 
-                <h2 className="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter leading-none">
-                    Pista Íntima
+                <h2 className="text-6xl md:text-8xl font-extrabold text-white uppercase tracking-tighter leading-[0.85]">
+                    Pista<br /><span className="text-primary italic">Íntima</span>
                 </h2>
 
-                <p className="text-2xl md:text-3xl text-white/90 font-display italic max-w-2xl mx-auto">
+                <p className="text-xl md:text-2xl text-white/70 font-light tracking-widest italic max-w-xl mx-auto">
                     &quot;Donde los pasos cortos dicen más que las palabras largas&quot;
                 </p>
 

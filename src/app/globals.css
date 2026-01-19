@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-display: var(--font-playfair);
-  --font-body: var(--font-montserrat);
+  --font-display: var(--font-syne);
+  --font-body: var(--font-inter);
 
   --color-primary: #B8860B;
   --color-background: #121212;
