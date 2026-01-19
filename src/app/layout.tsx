@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
+import SmoothScroll from "@/components/ui/SmoothScroll";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",

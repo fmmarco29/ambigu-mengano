@@ -1,15 +1,15 @@
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import MusicalSection from '@/components/MusicalSection';
-import AtmosphereGallery from '@/components/AtmosphereGallery';
-import MenuGrid from '@/components/MenuGrid';
-import AgendaSection from '@/components/AgendaSection';
-import EventsTimeline from '@/components/EventsTimeline';
-import DanceFloor from '@/components/DanceFloor';
-import VipSection from '@/components/VipSection';
-import GiftSection from '@/components/GiftSection';
-import ReservationForm from '@/components/ReservationForm';
-import Footer from '@/components/Footer';
+import Header from '@/components/layout/Header';
+import Hero from '@/components/sections/Hero';
+import MusicalSection from '@/components/sections/MusicalSection';
+import AtmosphereGallery from '@/components/sections/AtmosphereGallery';
+import MenuGrid from '@/components/sections/MenuGrid';
+import AgendaSection from '@/components/sections/AgendaSection';
+import EventsTimeline from '@/components/sections/EventsTimeline';
+import DanceFloor from '@/components/sections/DanceFloor';
+import VipSection from '@/components/sections/VipSection';
+import GiftSection from '@/components/sections/GiftSection';
+import ReservationForm from '@/components/sections/ReservationForm';
+import Footer from '@/components/layout/Footer';
 
 export default function Home() {
   return (
