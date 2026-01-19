@@ -2,23 +2,21 @@
 
 export default function Header() {
     return (
-        <header className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between border-b border-primary/20 bg-background/80 backdrop-blur-md px-6 py-4">
+        <header className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] flex items-center justify-between border border-primary/20 bg-glass backdrop-blur-xl px-10 py-3 rounded-full w-[95%] max-w-7xl transition-all duration-500 hover:border-primary/40">
             <div className="flex items-center">
-                <div className="size-10 border-2 border-primary rounded-sm shadow-[0_0_15px_rgba(183,134,11,0.2)] flex items-center justify-center">
-                    <span className="text-xl font-black tracking-tighter font-sans leading-none mb-[-1px]">
-                        <span className="text-white">A</span>
-                        <span className="text-primary">M</span>
+                <div className="size-10 border border-primary/40 rounded-full flex items-center justify-center bg-black/50 overflow-hidden group hover:border-primary transition-all">
+                    <span className="text-xl font-black tracking-tighter font-sans leading-none flex items-center justify-center">
+                        <span className="text-white group-hover:scale-110 transition-transform">A</span>
+                        <span className="text-primary group-hover:scale-110 transition-transform">M</span>
                     </span>
                 </div>
             </div>
 
-            <nav className="hidden md:flex items-center gap-10">
-                <a href="#carta" className="text-white/60 hover:text-primary text-xs font-bold uppercase tracking-[0.2em] transition-colors">La Carta</a>
-                <a href="#agenda" className="text-white/60 hover:text-primary text-xs font-bold uppercase tracking-[0.2em] transition-colors">Agenda</a>
-                <a href="#eventos" className="text-white/60 hover:text-primary text-xs font-bold uppercase tracking-[0.2em] transition-colors">Eventos</a>
-                <a href="#vip" className="text-white/60 hover:text-primary text-xs font-bold uppercase tracking-[0.2em] transition-colors">Club</a>
-                <a href="#regalos" className="text-white/60 hover:text-primary text-xs font-bold uppercase tracking-[0.2em] transition-colors">Regalos</a>
-                <a href="#reservas" className="text-black bg-primary px-8 py-2.5 rounded-full text-xs font-black uppercase tracking-[0.2em] hover:shadow-[0_0_20px_rgba(184,134,11,0.3)] transition-all">Reserva</a>
+            <nav className="hidden md:flex items-center gap-12">
+                <a href="#carta" className="text-white/40 hover:text-primary text-[10px] font-bold uppercase tracking-[0.4em] transition-all">Carta</a>
+                <a href="#agenda" className="text-white/40 hover:text-primary text-[10px] font-bold uppercase tracking-[0.4em] transition-all">Agenda</a>
+                <a href="#vip" className="text-white/40 hover:text-primary text-[10px] font-bold uppercase tracking-[0.4em] transition-all">Club</a>
+                <a href="#reservas" className="text-black bg-primary px-8 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.4em] hover:scale-105 transition-all shadow-lg shadow-primary/20">Reserva</a>
             </nav>
 
             <button className="flex size-10 items-center justify-center rounded-lg bg-primary/5 text-primary active:scale-90 transition-transform md:hidden">
