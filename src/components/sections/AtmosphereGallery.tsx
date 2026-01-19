@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 const images = [
     {
-        url: "/images/ambigu_interior_vibe_1768824867152.png",
+        url: "/images/ambigu_escenario_new.png",
         title: "El Escenario",
         desc: "Donde el tiempo se detiene entre terciopelo y madera."
     },
