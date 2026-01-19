@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# inspiration and local copies
+stitch_caf_fulano_landing_page/
+stitch_caf_fulano_landing_page (1)/
+stitch_caf_fulano_landing_page (2)/
+stitch_caf_fulano_landing_page (3)/
+stitch_caf_fulano_landing_page (4)/
+stitch_caf_fulano_landing_page (5)/
